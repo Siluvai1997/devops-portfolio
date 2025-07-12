@@ -1,4 +1,5 @@
 # DevOps Portfolio
+![CI/CD](https://github.com/Siluvai1997/devops-portfolio/actions/workflows/deploy.yml/badge.svg)
 
 Welcome to my personal DevOps portfolio website. This site showcases my professional background, technical skills, cloud experience, and real-world DevOps and infrastructure projects.
 
