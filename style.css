@@ -190,3 +190,30 @@ a:hover {
   font-size: 0.95em;
   color: #2e6c80;
 }
+
+/* --- Social icons --- */
+.connect h2 {
+  text-align:center;
+  margin-bottom:12px;
+}
+.social-links{
+  display:flex;
+  justify-content:center;
+  gap:28px;
+  margin-bottom:32px;
+}
+.social-links svg{
+  width:32px;
+  height:32px;
+  fill:#2e6c80;
+  transition:fill .3s, transform .3s;
+}
+.social-links a:hover svg{
+  fill:#007acc;
+  transform:scale(1.1);
+}
+
+/* Optional subtle page background upgrade */
+body{
+  background:linear-gradient(135deg,#f0f4f8 0%,#e8edf1 100%);
+}
