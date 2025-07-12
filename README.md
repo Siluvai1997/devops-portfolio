@@ -1,4 +1,4 @@
-# DevOps Portfolio – Antony Washington
+# DevOps Portfolio
 
 Welcome to my personal DevOps portfolio website. This site showcases my professional background, technical skills, cloud experience, and real-world DevOps and infrastructure projects.
 
@@ -15,7 +15,7 @@ This portfolio includes:
 
 ## Live Site
 
-[View Portfolio](https://yourusername.github.io/devops-portfolio)
+[View Portfolio](https://Siluvai1997.github.io/devops-portfolio)
 
 > Built using HTML, CSS, and JavaScript with GitHub Actions CI/CD for auto-deployment via GitHub Pages.
 
