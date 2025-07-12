@@ -136,10 +136,7 @@ a:hover {
   content: "📘 ";
 }
 
-.accordion::before {
-  content: "📂 ";
-  margin-right: 8px;
-}
+
 .panel {
   border-left: 4px solid #2e6c80;
   background-color: #fefefe;
@@ -216,4 +213,10 @@ a:hover {
 /* Optional subtle page background upgrade */
 body{
   background:linear-gradient(135deg,#f0f4f8 0%,#e8edf1 100%);
+}
+
+.emoji {
+  margin-right: 10px;
+  font-size: 1.3em;
+  vertical-align: middle;
 }
