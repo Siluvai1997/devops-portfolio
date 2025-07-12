@@ -177,3 +177,16 @@ a:hover {
   margin: 0;
   color: #555;
 }
+
+.cert-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 30px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+.cert-list li {
+  list-style: none;
+  font-size: 0.95em;
+  color: #2e6c80;
+}
