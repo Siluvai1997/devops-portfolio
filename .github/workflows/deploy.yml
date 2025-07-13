@@ -2,8 +2,7 @@ name: Lint and Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 permissions:
   contents: write
@@ -13,43 +12,37 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source code
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: 20
 
+      # ↓ install *specific* versions; ESLint 8 works with .eslintrc.json
       - name: Install linters & Prettier
         run: |
-          npm install -g htmlhint stylelint stylelint-config-standard eslint @eslint/js prettier
+          npm install -g \
+            htmlhint \
+            stylelint stylelint-config-standard \
+            eslint@8 \
+            prettier
 
-      - name: Run HTML lint
+      - name: HTML lint
         run: htmlhint "./*.html"
 
-      - name: Run CSS lint
+      - name: CSS lint
         run: |
           echo '{ "extends": "stylelint-config-standard" }' > .stylelintrc.json
           stylelint "**/*.css"
 
-      - name: Run JavaScript lint
+      - name: JavaScript lint
         run: |
-          echo "import { eslint } from '@eslint/js';
-          export default [
-            eslint.configs.recommended,
-            {
-              languageOptions: {
-                globals: {
-                  browser: true,
-                  es2021: true
-                }
-              }
-            }
-          ];" > eslint.config.js
+          echo '{ "env": { "browser": true, "es2021": true }, "extends": "eslint:recommended" }' > .eslintrc.json
           eslint "**/*.js"
 
-      - name: Run Prettier check
+      - name: Prettier check
         run: |
           echo '{}' > .prettierrc
           prettier --check "**/*.{html,css,js}"
