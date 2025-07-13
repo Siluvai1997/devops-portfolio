@@ -1,209 +1,487 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Antony Washington | DevOps & Cloud Engineer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Hi, I'm Antony Washington </h1>
-      <p>DevOps & Cloud Engineer | Azure | AWS | Kubernetes | Terraform | CI/CD</p>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Antony Washington | DevOps & Cloud Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Hi, I'm Antony Washington</h1>
+        <p>
+          DevOps & Cloud Engineer | Azure | AWS | Kubernetes | Terraform | CI/CD
+        </p>
+      </header>
 
-    <section>
-      <h2>About Me</h2>
-      <p>I’m a passionate DevOps & Cloud Engineer with a strong foundation in automating infrastructure, monitoring systems, and securing cloud environments. I specialize in Infrastructure as Code (IaC) using Terraform and Ansible, and have hands-on experience deploying observability stacks for production-like environments. My background also includes cloud networking, CI/CD automation, and container orchestration across AWS, Azure, and GCP.</p>
-    </section>
+      <section>
+        <h2>About Me</h2>
+        <p>
+          I’m a passionate DevOps & Cloud Engineer with a strong foundation in
+          automating infrastructure, monitoring systems, and securing cloud
+          environments. I specialize in Infrastructure as Code (IaC) using
+          Terraform and Ansible, and have hands-on experience deploying
+          observability stacks for production-like environments. My background
+          also includes cloud networking, CI/CD automation, and container
+          orchestration across AWS, Azure, and GCP.
+        </p>
+      </section>
 
-    <section>
-      <h2>Education</h2>
-      <div class="education-block">
-        <div class="degree">Master of Engineering in Internetworking</div>
+      <section>
+        <h2>Education</h2>
+        <div class="education-block">
+          <div class="degree">Master of Engineering in Internetworking</div>
 
-        <div class="institution">Dalhousie University, Halifax</div>
-        <div class="duration">January 2023 – July 2024</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-      <div class="experience-grid">
-        <div class="experience-card">
-          <div class="role">Teaching Assistant</div>
-          <div class="org">Dalhousie University, Halifax</div>
-          <div class="date">April 2024 – June 2024</div>
+          <div class="institution">Dalhousie University, Halifax</div>
+          <div class="duration">January 2023 – July 2024</div>
         </div>
-        <div class="experience-card">
-          <div class="role">Student Experience Leader</div>
-          <div class="org">Dalhousie University, Halifax</div>
-          <div class="date">July 2023 – April 2024</div>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <div class="experience-grid">
+          <div class="experience-card">
+            <div class="role">Teaching Assistant</div>
+            <div class="org">Dalhousie University, Halifax</div>
+            <div class="date">April 2024 – June 2024</div>
+          </div>
+          <div class="experience-card">
+            <div class="role">Student Experience Leader</div>
+            <div class="org">Dalhousie University, Halifax</div>
+            <div class="date">July 2023 – April 2024</div>
+          </div>
+          <div class="experience-card">
+            <div class="role">DevOps Engineer</div>
+            <div class="org">TGK Streamline Solutions, Chennai, India</div>
+            <div class="date">February 2019 – August 2022</div>
+          </div>
+          <div class="experience-card">
+            <div class="role">DevOps Trainee</div>
+            <div class="org">TGK Streamline Solutions, Chennai, India</div>
+            <div class="date">August 2018 – January 2019</div>
+          </div>
         </div>
-        <div class="experience-card">
-          <div class="role">DevOps Engineer</div>
-          <div class="org">TGK Streamline Solutions, Chennai, India</div>
-          <div class="date">February 2019 – August 2022</div>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <button class="accordion" title="Click to view 3 Azure projects">
+          <span class="emoji">🌐</span> Azure
+          <span class="chevron">▶</span>
+        </button>
+        <div class="panel" style="display: none">
+          <div class="project-card">
+            <h4>Azure Hybrid Network Integration & Security</h4>
+            <p>
+              Provisioned secure Azure environments using Terraform, Azure CLI,
+              and network policies. Enabled monitoring with Azure Monitor and
+              Network Watcher.
+            </p>
+          </div>
+          <div class="project-card">
+            <h4>
+              <a
+                href="https://github.com/Siluvai1997/azure-spn-creation-automation"
+                >Azure SPN Creation Automation</a
+              >
+            </h4>
+            <p>
+              Automates the creation of Azure Service Principals for secure and
+              repeatable programmatic access.
+            </p>
+          </div>
+          <div class="project-card">
+            <h4>
+              <a
+                href="https://github.com/Siluvai1997/Azure-resources-clean-up-automation"
+                >Azure Resources Clean-up Automation</a
+              >
+            </h4>
+            <p>
+              Deletes unused resources across Azure subscriptions using tags and
+              Azure CLI, supporting cost control.
+            </p>
+          </div>
         </div>
-        <div class="experience-card">
-          <div class="role">DevOps Trainee</div>
-          <div class="org">TGK Streamline Solutions, Chennai, India</div>
-          <div class="date">August 2018 – January 2019</div>
+
+        <button class="accordion" title="Click to view 6 AWS projects">
+          <span class="emoji">☁️</span> AWS
+          <span class="chevron">▶</span>
+        </button>
+        <div class="panel" style="display: none">
+          <div class="project-card">
+            <h4>Secure AWS Provisioning & Network Automation</h4>
+            <p>
+              Built an AWS setup with CloudFormation and CLI for VPCs, IAM, EC2,
+              and S3 provisioning.
+            </p>
+          </div>
+          <div class="project-card">
+            <h4>
+              <a href="https://github.com/Siluvai1997/aws-security-audit-cli"
+                >AWS Security Audit CLI</a
+              >
+            </h4>
+            <p>CLI tool for lightweight AWS IAM and network policy auditing.</p>
+          </div>
+          <div class="project-card">
+            <h4>
+              <a
+                href="https://github.com/Siluvai1997/aws-cloudformation-cicd-pipeline-java-app"
+                >AWS CloudFormation CI/CD Pipeline (Java App)</a
+              >
+            </h4>
+            <p>
+              CI/CD pipeline to deploy a Java web app using AWS CloudFormation
+              and CodePipeline.
+            </p>
+          </div>
+          <div class="project-card">
+            <h4>
+              <a
+                href="https://github.com/Siluvai1997/serverless-data-pipeline-aws"
+                >Serverless Data Pipeline on AWS</a
+              >
+            </h4>
+            <p>
+              Event-driven architecture using AWS Lambda, SNS, S3, and DynamoDB
+              for log ingestion.
+            </p>
+          </div>
+          <div class="project-card">
+            <h4>
+              <a
+                href="https://github.com/Siluvai1997/aws-iac-delivery-pipeline-terraform"
+                >AWS IaC Delivery Pipeline (Terraform)</a
+              >
+            </h4>
+            <p>
+              Terraform-based delivery pipeline integrated with GitHub Actions
+              for AWS provisioning.
+            </p>
+          </div>
+          <div class="project-card">
+            <h4>
+              <a
+                href="https://github.com/Siluvai1997/aws-terraform-hello-world-practice"
+                >AWS Terraform Hello World</a
+              >
+            </h4>
+            <p>
+              Intro Terraform project to provision AWS VPC, IAM, and EC2 with
+              backend state.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
 
-    
+        <button class="accordion" title="Click to view 2 GCP projects">
+          <span class="emoji">🛰️</span> GCP
+          <span class="chevron">▶</span>
+        </button>
+        <div class="panel" style="display: none">
+          <div class="project-card">
+            <h4>
+              <a href="https://github.com/Siluvai1997/gcp-devops-automation"
+                >GCP DevOps Automation</a
+              >
+            </h4>
+            <p>
+              Terraform automation for GCP infrastructure with GitOps and
+              Jenkins pipelines.
+            </p>
+          </div>
+          <div class="project-card">
+            <h4>
+              <a href="https://github.com/Siluvai1997/gke-monitoring-pipeline"
+                >GKE Monitoring Pipeline</a
+              >
+            </h4>
+            <p>
+              Monitoring stack (Prometheus, Grafana, Loki) with dashboards
+              deployed into GKE.
+            </p>
+          </div>
+        </div>
 
-<section>
-      <h2>Projects</h2>
-      <button class="accordion" title="Click to view 3 Azure projects">
-  <span class="emoji">🌐</span> Azure
-  <span class="chevron">▶</span>
-</button>
-<div class="panel" style="display: none;">
-        <div class="project-card"><h4>Azure Hybrid Network Integration & Security</h4><p>Provisioned secure Azure environments using Terraform, Azure CLI, and network policies. Enabled monitoring with Azure Monitor and Network Watcher.</p></div>
-        <div class="project-card"><h4><a href="https://github.com/Siluvai1997/azure-spn-creation-automation">Azure SPN Creation Automation</a></h4><p>Automates the creation of Azure Service Principals for secure and repeatable programmatic access.</p></div>
-        <div class="project-card"><h4><a href="https://github.com/Siluvai1997/Azure-resources-clean-up-automation">Azure Resources Clean-up Automation</a></h4><p>Deletes unused resources across Azure subscriptions using tags and Azure CLI, supporting cost control.</p></div>
-      </div>
+        <button
+          class="accordion"
+          title="Click to view 6 RedHat OpenShift projects"
+        >
+          <span class="emoji">🎩</span> OpenShift
+          <span class="chevron">▶</span>
+        </button>
+        <div class="panel" style="display: none">
+          <div class="project-card">
+            <h4>
+              <a
+                href="https://github.com/Siluvai1997/aro-upgrade-scheduler-automation"
+                >ARO Upgrade Scheduler Automation</a
+              >
+            </h4>
+            <p>
+              Automates minor and patch version upgrades for ARO clusters using
+              PowerShell + Azure DevOps.
+            </p>
+          </div>
+          <div class="project-card">
+            <h4>
+              <a href="https://github.com/Siluvai1997/openshift-ansible-day2"
+                >OpenShift Ansible Day-2 Automation</a
+              >
+            </h4>
+            <p>
+              Automates day-2 tasks in OpenShift such as node labeling and
+              quotas using Ansible playbooks.
+            </p>
+          </div>
+          <div class="project-card">
+            <h4>
+              <a
+                href="https://github.com/Siluvai1997/openshift-ansible-multicloud"
+                >OpenShift Ansible Multicloud</a
+              >
+            </h4>
+            <p>
+              Manages OpenShift clusters across multicloud using centralized
+              Ansible configuration.
+            </p>
+          </div>
+          <div class="project-card">
+            <h4>
+              <a
+                href="https://github.com/Siluvai1997/openshift-gitops-bootstrap"
+                >OpenShift GitOps Bootstrap</a
+              >
+            </h4>
+            <p>
+              Bootstraps GitOps deployment in OpenShift using ArgoCD and
+              AppSets.
+            </p>
+          </div>
+          <div class="project-card">
+            <h4>
+              <a
+                href="https://github.com/Siluvai1997/argocd-openshift-infra-bootstrap"
+                >ArgoCD OpenShift Infra Bootstrap</a
+              >
+            </h4>
+            <p>
+              Deploys foundational OpenShift resources via ArgoCD & Helm
+              templates.
+            </p>
+          </div>
+          <div class="project-card">
+            <h4>
+              <a
+                href="https://github.com/Siluvai1997/argocd-helm-helloworld-bootstrap-openshift"
+                >ArgoCD Helm HelloWorld Bootstrap</a
+              >
+            </h4>
+            <p>
+              Deploys a Helm-based app into OpenShift using GitOps and
+              namespace-scoped workflows.
+            </p>
+          </div>
+        </div>
 
-      <button class="accordion" title="Click to view 6 AWS projects">
-  <span class="emoji">☁️</span> AWS
-  <span class="chevron">▶</span>
-</button>
-<div class="panel" style="display: none;">
-        <div class="project-card"><h4>Secure AWS Provisioning & Network Automation</h4><p>Built an AWS setup with CloudFormation and CLI for VPCs, IAM, EC2, and S3 provisioning.</p></div>
-        <div class="project-card"><h4><a href="https://github.com/Siluvai1997/aws-security-audit-cli">AWS Security Audit CLI</a></h4><p>CLI tool for lightweight AWS IAM and network policy auditing.</p></div>
-        <div class="project-card"><h4><a href="https://github.com/Siluvai1997/aws-cloudformation-cicd-pipeline-java-app">AWS CloudFormation CI/CD Pipeline (Java App)</a></h4><p>CI/CD pipeline to deploy a Java web app using AWS CloudFormation and CodePipeline.</p></div>
-        <div class="project-card"><h4><a href="https://github.com/Siluvai1997/serverless-data-pipeline-aws">Serverless Data Pipeline on AWS</a></h4><p>Event-driven architecture using AWS Lambda, SNS, S3, and DynamoDB for log ingestion.</p></div>
-        <div class="project-card"><h4><a href="https://github.com/Siluvai1997/aws-iac-delivery-pipeline-terraform">AWS IaC Delivery Pipeline (Terraform)</a></h4><p>Terraform-based delivery pipeline integrated with GitHub Actions for AWS provisioning.</p></div>
-        <div class="project-card"><h4><a href="https://github.com/Siluvai1997/aws-terraform-hello-world-practice">AWS Terraform Hello World</a></h4><p>Intro Terraform project to provision AWS VPC, IAM, and EC2 with backend state.</p></div>
-      </div>
+        <button class="accordion" title="Click to view 2 Kubernetes projects">
+          <span class="emoji">🐳</span> Kubernetes
+          <span class="chevron">▶</span>
+        </button>
+        <div class="panel" style="display: none">
+          <div class="project-card">
+            <h4>
+              <a href="https://github.com/Siluvai1997/k8s-security-audit-cli"
+                >K8s Security Audit CLI</a
+              >
+            </h4>
+            <p>
+              CLI scanner for Kubernetes RBAC, pod specs, and network policies.
+            </p>
+          </div>
+          <div class="project-card">
+            <h4>
+              <a href="https://github.com/Siluvai1997/k8s-cicd-infrastructure"
+                >K8s CI/CD Infrastructure</a
+              >
+            </h4>
+            <p>
+              CI/CD automation using GitHub Actions for Docker-based workloads
+              in Kubernetes.
+            </p>
+          </div>
+        </div>
 
-<button class="accordion" title="Click to view 2 GCP projects">
-  <span class="emoji">🛰️</span> GCP
-  <span class="chevron">▶</span>
-</button>
-<div class="panel" style="display: none;">
-        <div class="project-card"><h4><a href="https://github.com/Siluvai1997/gcp-devops-automation">GCP DevOps Automation</a></h4><p>Terraform automation for GCP infrastructure with GitOps and Jenkins pipelines.</p></div>
-        <div class="project-card"><h4><a href="https://github.com/Siluvai1997/gke-monitoring-pipeline">GKE Monitoring Pipeline</a></h4><p>Monitoring stack (Prometheus, Grafana, Loki) with dashboards deployed into GKE.</p></div>
-      </div>
+        <button class="accordion" title="Click to view ArgoCD projects">
+          <span class="emoji">🚀</span> ArgoCD
+          <span class="chevron">▶</span>
+        </button>
+        <div class="panel" style="display: none">
+          <div class="project-card">
+            <h4>
+              <a
+                href="https://github.com/Siluvai1997/hybrid-k8s-gitops-platform"
+                >Hybrid Kubernetes GitOps Platform</a
+              >
+            </h4>
+            <p>
+              Manages hybrid clusters using ArgoCD with Helm, RBAC, and
+              multi-repo support.
+            </p>
+          </div>
+        </div>
 
-      <button class="accordion" title="Click to view 6 RedHat OpenShift projects">
-  <span class="emoji">🎩</span> OpenShift
-  <span class="chevron">▶</span>
-</button>
-<div class="panel" style="display: none;">
-        <div class="project-card"><h4><a href="https://github.com/Siluvai1997/aro-upgrade-scheduler-automation">ARO Upgrade Scheduler Automation</a></h4><p>Automates minor and patch version upgrades for ARO clusters using PowerShell + Azure DevOps.</p></div>
-        <div class="project-card"><h4><a href="https://github.com/Siluvai1997/openshift-ansible-day2">OpenShift Ansible Day-2 Automation</a></h4><p>Automates day-2 tasks in OpenShift such as node labeling and quotas using Ansible playbooks.</p></div>
-        <div class="project-card"><h4><a href="https://github.com/Siluvai1997/openshift-ansible-multicloud">OpenShift Ansible Multicloud</a></h4><p>Manages OpenShift clusters across multicloud using centralized Ansible configuration.</p></div>
-        <div class="project-card"><h4><a href="https://github.com/Siluvai1997/openshift-gitops-bootstrap">OpenShift GitOps Bootstrap</a></h4><p>Bootstraps GitOps deployment in OpenShift using ArgoCD and AppSets.</p></div>
-        <div class="project-card"><h4><a href="https://github.com/Siluvai1997/argocd-openshift-infra-bootstrap">ArgoCD OpenShift Infra Bootstrap</a></h4><p>Deploys foundational OpenShift resources via ArgoCD & Helm templates.</p></div>
-        <div class="project-card"><h4><a href="https://github.com/Siluvai1997/argocd-helm-helloworld-bootstrap-openshift">ArgoCD Helm HelloWorld Bootstrap</a></h4><p>Deploys a Helm-based app into OpenShift using GitOps and namespace-scoped workflows.</p></div>
-      </div>
+        <button class="accordion" title="Click to view CI/CD projects">
+          <span class="emoji">🔄</span> CI/CD
+          <span class="chevron">▶</span>
+        </button>
+        <div class="panel" style="display: none">
+          <div class="project-card">
+            <h4>
+              <a
+                href="https://github.com/Siluvai1997/python-cicd-pipeline-docker-kubernetes"
+                >Python CI/CD Pipeline (Docker + K8s)</a
+              >
+            </h4>
+            <p>
+              GitHub Actions pipeline for testing, Dockerizing, and deploying a
+              Python app into Kubernetes.
+            </p>
+          </div>
+        </div>
 
-<button class="accordion" title="Click to view 2 Kubernetes projects">
-  <span class="emoji">🐳</span> Kubernetes
-  <span class="chevron">▶</span>
-</button>
-<div class="panel" style="display: none;">
-        <div class="project-card"><h4><a href="https://github.com/Siluvai1997/k8s-security-audit-cli">K8s Security Audit CLI</a></h4><p>CLI scanner for Kubernetes RBAC, pod specs, and network policies.</p></div>
-        <div class="project-card"><h4><a href="https://github.com/Siluvai1997/k8s-cicd-infrastructure">K8s CI/CD Infrastructure</a></h4><p>CI/CD automation using GitHub Actions for Docker-based workloads in Kubernetes.</p></div>
-      </div>
+        <button class="accordion" title="Click to view Portfolio project">
+          <span class="emoji">📁</span> Portfolio
+          <span class="chevron">▶</span>
+        </button>
+        <div class="panel" style="display: none">
+          <div class="project-card">
+            <h4>DevOps Portfolio (This Site)</h4>
+            <p>
+              Static site hosted via GitHub Pages and auto-deployed using GitHub
+              Actions.
+            </p>
+          </div>
+        </div>
+      </section>
 
-<button class="accordion" title="Click to view ArgoCD projects">
-  <span class="emoji">🚀</span> ArgoCD
-  <span class="chevron">▶</span>
-</button>
-<div class="panel" style="display: none;">
-        <div class="project-card"><h4><a href="https://github.com/Siluvai1997/hybrid-k8s-gitops-platform">Hybrid Kubernetes GitOps Platform</a></h4><p>Manages hybrid clusters using ArgoCD with Helm, RBAC, and multi-repo support.</p></div>
-      </div>
+      <section>
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div>
+            <strong>Containers & Orchestration:</strong> Docker, Kubernetes
+            (EKS, AKS), Helm
+          </div>
+          <div><strong>Infrastructure as Code:</strong> Terraform, Ansible</div>
+          <div>
+            <strong>CI/CD & DevOps Tools:</strong> Jenkins, GitHub Actions,
+            SonarQube, JFrog Artifactory
+          </div>
+          <div>
+            <strong>Cloud Platforms:</strong> AWS, Azure, OpenShift, GCP (basic)
+          </div>
+          <div>
+            <strong>Scripting & Automation:</strong> Python, PowerShell, Bash
+          </div>
+          <div>
+            <strong>Monitoring & Observability:</strong> Prometheus, Grafana,
+            Loki, ELK stack, Datadog
+          </div>
+          <div>
+            <strong>Version Control & GitOps:</strong> Git, GitHub, GitLab,
+            ArgoCD
+          </div>
+          <div>
+            <strong>Agile & ITSM Tools:</strong> Agile (Scrum), JIRA, ServiceNow
+          </div>
+          <div>
+            <strong>Databases:</strong> PostgreSQL, MySQL, NoSQL (MongoDB)
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Certifications</h2>
+        <ul class="cert-list">
+          <li>
+            <strong>🎓 Microsoft Certified:</strong> Azure Network Engineer
+          </li>
+          <li><strong>🎓 Microsoft Certified:</strong> Azure Fundamentals</li>
+          <li><strong>☁️ AWS Certified:</strong> Cloud Practitioner</li>
+          <li><strong>☁️ AWS Certified:</strong> Solution Architect</li>
+          <li>
+            <strong>🐳 CNCF:</strong> Certified Kubernetes Administrator (CKA)
+          </li>
+          <li><strong>🔧 HashiCorp:</strong> Terraform Certified Associate</li>
+          <li><strong>🌐 CISCO:</strong> Certified Network Associate (CCNA)</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Professional Development</h2>
+        <ul class="training-list">
+          <li><strong>Udemy:</strong> Python - Complete BootCamp</li>
+          <li>
+            <strong>RedHat:</strong> Introduction to Azure RedHat OpenShift
+          </li>
+          <li>
+            <strong>AWS Skills:</strong> AWS Cloud Practitioner Essentials
+          </li>
+          <li><strong>AWS Skills:</strong> DevOps Engineering on AWS</li>
+          <li>
+            <strong>GCP Skills:</strong> Google Cloud DevOps Engineer (SRE Path)
+          </li>
+          <li>
+            <strong>Coursera:</strong> Microsoft DevOps Engineer Expert
+            Specialization
+          </li>
+        </ul>
+      </section>
 
-<button class="accordion" title="Click to view CI/CD projects">
-  <span class="emoji">🔄</span> CI/CD
-  <span class="chevron">▶</span>
-</button>
-<div class="panel" style="display: none;">
-        <div class="project-card"><h4><a href="https://github.com/Siluvai1997/python-cicd-pipeline-docker-kubernetes">Python CI/CD Pipeline (Docker + K8s)</a></h4><p>GitHub Actions pipeline for testing, Dockerizing, and deploying a Python app into Kubernetes.</p></div>
-      </div>
+      <section>
+        <h2>Achievements</h2>
+        <div class="award-card">
+          <h4>Dalhousie University Academic Performance Scholarship</h4>
+          <p>
+            A scholarship awarded to the top academic students based on their
+            performance in a selected set of courses.
+          </p>
+        </div>
+      </section>
 
-<button class="accordion" title="Click to view Portfolio project">
-  <span class="emoji">📁</span> Portfolio
-  <span class="chevron">▶</span>
-</button>
-<div class="panel" style="display: none;">
-        <div class="project-card"><h4>DevOps Portfolio (This Site)</h4><p>Static site hosted via GitHub Pages and auto-deployed using GitHub Actions.</p></div>
-      </div>
+      <!---- NEW minimalist social-icon section -->
+      <section class="connect">
+        <h2>Let's Connect</h2>
+        <div class="social-links">
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/siluvai-antony"
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M4.98 3.5C4.98 5 3.9 6 2.5 6S0 5 0 3.5 1.08 1 2.48 1s2.5 1 2.5 2.5zM0 8.9h5V24H0zM8.5 8.9h4.8v2h.07c.67-1.3 2.3-2.7 4.73-2.7 5.06 0 6 3.3 6 7.6V24h-5v-7.3c0-1.7-.03-3.9-2.4-3.9-2.4 0-2.8 1.9-2.8 3.8V24h-5z"
+              />
+            </svg>
+          </a>
+          <!-- GitHub -->
+          <a
+            href="https://github.com/Siluvai1997"
+            aria-label="GitHub"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.4.7-4-1.6-4-1.6a3.2 3.2 0 0 0-1.3-1.7c-1.1-.8.1-.8.1-.8a2.6 2.6 0 0 1 1.9 1.3c1.1 1.9 2.9 1.4 3.6 1.1 0-.8.4-1.4.8-1.8-2.7-.3-5.6-1.4-5.6-6A4.6 4.6 0 0 1 5 8.6 4.2 4.2 0 0 1 5.1 5s1-.3 3.3 1.3a11.3 11.3 0 0 1 6 0C16.7 4.7 17.7 5 17.7 5a4.2 4.2 0 0 1 .1 3.6 4.6 4.6 0 0 1 1.2 3.2c0 4.7-2.9 5.7-5.7 6 .5.4.9 1.2.9 2.5v3.6c0 .3.2.7.8.6A12 12 0 0 0 12 .3"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+    </div>
 
-    </section>
-
-<section>
-  <h2>Skills</h2>
-  <div class="skills-grid">
-    <div><strong>Containers & Orchestration:</strong> Docker, Kubernetes (EKS, AKS), Helm</div>
-    <div><strong>Infrastructure as Code:</strong> Terraform, Ansible</div>
-    <div><strong>CI/CD & DevOps Tools:</strong> Jenkins, GitHub Actions, SonarQube, JFrog Artifactory</div>
-    <div><strong>Cloud Platforms:</strong> AWS, Azure, OpenShift, GCP (basic)</div>
-    <div><strong>Scripting & Automation:</strong> Python, PowerShell, Bash</div>
-    <div><strong>Monitoring & Observability:</strong> Prometheus, Grafana, Loki, ELK stack, Datadog</div>
-    <div><strong>Version Control & GitOps:</strong> Git, GitHub, GitLab, ArgoCD</div>
-    <div><strong>Agile & ITSM Tools:</strong> Agile (Scrum), JIRA, ServiceNow</div>
-    <div><strong>Databases:</strong> PostgreSQL, MySQL, NoSQL (MongoDB)</div>
-  </div>
-</section>
-  <h2>Certifications</h2>
-  <ul class="cert-list">
-    <li><strong>🎓 Microsoft Certified:</strong> Azure Network Engineer</li>
-    <li><strong>🎓 Microsoft Certified:</strong> Azure Fundamentals</li>
-    <li><strong>☁️ AWS Certified:</strong> Cloud Practitioner</li>
-    <li><strong>☁️ AWS Certified:</strong> Solution Architect</li>
-    <li><strong>🐳 CNCF:</strong> Certified Kubernetes Administrator (CKA)</li>
-    <li><strong>🔧 HashiCorp:</strong> Terraform Certified Associate</li>
-    <li><strong>🌐 CISCO:</strong> Certified Network Associate (CCNA)</li>
-  </ul>
-</section>
-    <section>
-      <h2>Professional Development</h2>
-      <ul class="training-list">
-        <li><strong>Udemy:</strong> Python - Complete BootCamp</li>
-        <li><strong>RedHat:</strong> Introduction to Azure RedHat OpenShift</li>
-        <li><strong>AWS Skills:</strong> AWS Cloud Practitioner Essentials</li>
-        <li><strong>AWS Skills:</strong> DevOps Engineering on AWS</li>
-        <li><strong>GCP Skills:</strong> Google Cloud DevOps Engineer (SRE Path)</li>
-        <li><strong>Coursera:</strong> Microsoft DevOps Engineer Expert Specialization</li>
-      </ul>
-    </section>
-
-  
-
-
-<section>
-  <h2>Achievements</h2>
-  <div class="award-card">
-    <h4>Dalhousie University Academic Performance Scholarship</h4>
-    <p>A scholarship awarded to the top academic students based on their performance in a selected set of courses.</p>
-  </div>
-</section>
-
-<!---- NEW minimalist social-icon section -->
-<section class="connect">
-  <h2>Let's Connect</h2>
-  <div class="social-links">
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/siluvai-antony" aria-label="LinkedIn" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 5 3.9 6 2.5 6S0 5 0 3.5 1.08 1 2.48 1s2.5 1 2.5 2.5zM0 8.9h5V24H0zM8.5 8.9h4.8v2h.07c.67-1.3 2.3-2.7 4.73-2.7 5.06 0 6 3.3 6 7.6V24h-5v-7.3c0-1.7-.03-3.9-2.4-3.9-2.4 0-2.8 1.9-2.8 3.8V24h-5z"/></svg>
-    </a>
-    <!-- GitHub -->
-    <a href="https://github.com/Siluvai1997" aria-label="GitHub" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.4.7-4-1.6-4-1.6a3.2 3.2 0 0 0-1.3-1.7c-1.1-.8.1-.8.1-.8a2.6 2.6 0 0 1 1.9 1.3c1.1 1.9 2.9 1.4 3.6 1.1 0-.8.4-1.4.8-1.8-2.7-.3-5.6-1.4-5.6-6A4.6 4.6 0 0 1 5 8.6 4.2 4.2 0 0 1 5.1 5s1-.3 3.3 1.3a11.3 11.3 0 0 1 6 0C16.7 4.7 17.7 5 17.7 5a4.2 4.2 0 0 1 .1 3.6 4.6 4.6 0 0 1 1.2 3.2c0 4.7-2.9 5.7-5.7 6 .5.4.9 1.2.9 2.5v3.6c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
-    </a>
-  </div>
-</section>
-
-
-  </div>
-  
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
