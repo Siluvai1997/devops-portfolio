@@ -23,7 +23,7 @@ jobs:
 
       - name: Install linters & Prettier
         run: |
-          npm install -g htmlhint stylelint stylelint-config-standard eslint prettier
+          npm install -g htmlhint stylelint stylelint-config-standard eslint @eslint/js prettier
 
       - name: Run HTML lint
         run: htmlhint "./*.html"
