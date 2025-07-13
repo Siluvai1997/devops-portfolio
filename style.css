@@ -99,14 +99,7 @@ a:hover {
 .accordion.active {
   background-color: #1e4c5a;
 }
-.panel {
-  padding: 0 20px 15px;
-  display: none;
-  background-color: #f9f9f9;
-  overflow: hidden;
-  border-left: 4px solid #2e6c80;
-  margin-bottom: 15px;
-}
+
 
 .badge-grid {
   display: flex;
@@ -143,6 +136,15 @@ a:hover {
   padding: 10px 20px 20px;
   margin-bottom: 10px;
   border-radius: 4px;
+}
+
+.panel {
+  padding: 0 20px 15px;
+  display: none;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  border-left: 4px solid #2e6c80;
+  margin-bottom: 15px;
 }
 
 .skills-grid {
