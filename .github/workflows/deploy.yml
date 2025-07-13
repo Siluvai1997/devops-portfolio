@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Lint and Deploy to GitHub Pages
 
 on:
   push:
@@ -6,15 +6,45 @@ on:
       - main
 
 permissions:
-  contents: write  # 🔐 needed for push
+  contents: write
 
 jobs:
-  build:
+  lint-and-deploy:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - name: Deploy
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install linters & Prettier
+        run: |
+          npm install -g htmlhint stylelint stylelint-config-standard eslint prettier
+
+      - name: Run HTML lint
+        run: htmlhint "./*.html"
+
+      - name: Run CSS lint
+        run: |
+          echo '{ "extends": "stylelint-config-standard" }' > .stylelintrc.json
+          stylelint "**/*.css"
+
+      - name: Run JavaScript lint
+        run: |
+          echo '{ "env": { "browser": true, "es2021": true }, "extends": "eslint:recommended" }' > .eslintrc.json
+          eslint "**/*.js"
+
+      - name: Run Prettier check
+        run: |
+          echo '{}' > .prettierrc
+          prettier --check "**/*.{html,css,js}"
+
+      - name: Deploy to GitHub Pages
+        if: success()
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
