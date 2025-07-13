@@ -35,7 +35,18 @@ jobs:
 
       - name: Run JavaScript lint
         run: |
-          echo '{ "env": { "browser": true, "es2021": true }, "extends": "eslint:recommended" }' > .eslintrc.json
+          echo "import { eslint } from '@eslint/js';
+          export default [
+            eslint.configs.recommended,
+            {
+              languageOptions: {
+                globals: {
+                  browser: true,
+                  es2021: true
+                }
+              }
+            }
+          ];" > eslint.config.js
           eslint "**/*.js"
 
       - name: Run Prettier check
