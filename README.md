@@ -1,11 +1,11 @@
 # DevOps Portfolio
-![CI/CD](https://github.com/Siluvai1997/devops-portfolio/actions/workflows/deploy.yml/badge.svg)
 
 Welcome to my personal DevOps portfolio website. This site showcases my professional background, technical skills, cloud experience, and real-world DevOps and infrastructure projects.
 
 ## Overview
 
 This portfolio includes:
+
 - About Me & Education
 - Work Experience
 - 24+ categorized projects across Azure, AWS, GCP, OpenShift, Kubernetes, and more
