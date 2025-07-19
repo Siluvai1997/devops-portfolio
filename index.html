@@ -66,302 +66,463 @@
 
       <section>
         <h2>Projects</h2>
-        <button class="accordion" title="Click to view 3 Azure projects">
-          <span class="emoji">🌐</span> Azure
-          <span class="chevron">▶</span>
+        <button class="accordion" title="Click to view 2 Azure projects">
+          Azure <span class="chevron">▶</span>
         </button>
-        <div class="panel" style="display: none">
+        <div class="panel">
           <div class="project-card">
-            <h4>Azure Hybrid Network Integration & Security</h4>
-            <p>
-              Provisioned secure Azure environments using Terraform, Azure CLI,
-              and network policies. Enabled monitoring with Azure Monitor and
-              Network Watcher.
-            </p>
-          </div>
-          <div class="project-card">
-            <h4>
-              <a
-                href="https://github.com/Siluvai1997/azure-spn-creation-automation"
-                >Azure SPN Creation Automation</a
-              >
-            </h4>
+            <h3>Azure SPN Creation Automation</h3>
             <p>
               Automates the creation of Azure Service Principals for secure and
               repeatable programmatic access.
             </p>
+            <div class="tags">
+              <span class="tag">PowerShell</span><span class="tag">Azure</span
+              ><span class="tag">Azure DevOps</span><span class="tag">SPN</span>
+            </div>
+            <a
+              href="https://github.com/Siluvai1997/azure-spn-creation-automation"
+              target="_blank"
+              >GitHub →</a
+            >
           </div>
-          <div class="project-card">
-            <h4>
+          <details>
+            <summary class="view-more">View more Azure projects</summary>
+            <div class="project-card">
+              <h3>Azure Resources Clean-up Automation</h3>
+              <p>
+                Deletes unused resources across Azure subscriptions using
+                PowerShell and Azure DevOps pipeline, supporting cost control.
+              </p>
+              <div class="tags">
+                <span class="tag">PowerShell</span><span class="tag">Azure</span
+                ><span class="tag">Azure DevOps</span
+                ><span class="tag">SPN</span>
+              </div>
               <a
                 href="https://github.com/Siluvai1997/Azure-resources-clean-up-automation"
-                >Azure Resources Clean-up Automation</a
+                target="_blank"
+                >GitHub →</a
               >
-            </h4>
-            <p>
-              Deletes unused resources across Azure subscriptions using tags and
-              Azure CLI, supporting cost control.
-            </p>
+            </div>
+          </details>
+          <div class="view-all-link">
+            <a
+              href="https://github.com/Siluvai1997?tab=repositories"
+              target="_blank"
+              >View all repositories on GitHub →</a
+            >
           </div>
         </div>
-
         <button class="accordion" title="Click to view 6 AWS projects">
-          <span class="emoji">☁️</span> AWS
-          <span class="chevron">▶</span>
+          AWS <span class="chevron">▶</span>
         </button>
         <div class="panel" style="display: none">
           <div class="project-card">
-            <h4>Secure AWS Provisioning & Network Automation</h4>
+            <h3>AWS Security Audit CLI</h3>
             <p>
-              Built an AWS setup with CloudFormation and CLI for VPCs, IAM, EC2,
-              and S3 provisioning.
+              Python-based CLI tool for lightweight AWS IAM and network policy
+              auditing.
             </p>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Boto3</span
+              ><span class="tag">DevSecOps</span><span class="tag">S3</span
+              ><span class="tag">EC2</span><span class="tag">IAM</span>
+            </div>
+            <a
+              href="https://github.com/Siluvai1997/aws-security-audit-cli"
+              target="_blank"
+              >GitHub →</a
+            >
           </div>
-          <div class="project-card">
-            <h4>
-              <a href="https://github.com/Siluvai1997/aws-security-audit-cli"
-                >AWS Security Audit CLI</a
-              >
-            </h4>
-            <p>CLI tool for lightweight AWS IAM and network policy auditing.</p>
-          </div>
-          <div class="project-card">
-            <h4>
+          <details>
+            <summary class="view-more">View more AWS projects</summary>
+            <div class="project-card">
+              <h3>Secure AWS Provisioning & Network Automation</h3>
+              <p>
+                Built an AWS setup with CloudFormation and CLI for VPCs, IAM,
+                EC2, and S3 provisioning.
+              </p>
+              <div class="tags">
+                <span class="tag">CloudFormation</span
+                ><span class="tag">AWS CLI</span><span class="tag">IAM</span
+                ><span class="tag">EC2</span><span class="tag">VPC</span
+                ><span class="tag">S3</span>
+              </div>
+            </div>
+            <div class="project-card">
+              <h3>AWS CloudFormation CI/CD Pipeline (Java App)</h3>
+              <p>
+                CI/CD pipeline to deploy a Java web app using AWS CloudFormation
+                and CodePipeline.
+              </p>
+              <div class="tags">
+                <span class="tag">Java</span
+                ><span class="tag">AWS CodeCommit</span
+                ><span class="tag">AWS CodePipeline</span
+                ><span class="tag">AWS CodeBuild</span
+                ><span class="tag">AWS CodeDeploy</span
+                ><span class="tag">CloudFormation</span>
+              </div>
               <a
                 href="https://github.com/Siluvai1997/aws-cloudformation-cicd-pipeline-java-app"
-                >AWS CloudFormation CI/CD Pipeline (Java App)</a
+                target="_blank"
+                >GitHub →</a
               >
-            </h4>
-            <p>
-              CI/CD pipeline to deploy a Java web app using AWS CloudFormation
-              and CodePipeline.
-            </p>
-          </div>
-          <div class="project-card">
-            <h4>
+            </div>
+            <div class="project-card">
+              <h3>Serverless Data Pipeline on AWS</h3>
+              <p>
+                Event-driven architecture using AWS Lambda, SNS, S3, and
+                DynamoDB for log ingestion.
+              </p>
+              <div class="tags">
+                <span class="tag">Terraform</span><span class="tag">Lambda</span
+                ><span class="tag">Athena</span><span class="tag">Glue</span
+                ><span class="tag">S3</span><span class="tag">IAM</span
+                ><span class="tag">GitHub Actions</span>
+              </div>
               <a
                 href="https://github.com/Siluvai1997/serverless-data-pipeline-aws"
-                >Serverless Data Pipeline on AWS</a
+                target="_blank"
+                >GitHub →</a
               >
-            </h4>
-            <p>
-              Event-driven architecture using AWS Lambda, SNS, S3, and DynamoDB
-              for log ingestion.
-            </p>
-          </div>
-          <div class="project-card">
-            <h4>
+            </div>
+            <div class="project-card">
+              <h3>AWS IaC Delivery Pipeline using Terraform</h3>
+              <p>
+                Terraform-based delivery pipeline integrated with GitHub Actions
+                for AWS provisioning.
+              </p>
+              <div class="tags">
+                <span class="tag">Terraform</span
+                ><span class="tag">AWS CodeCommit</span
+                ><span class="tag">AWS CodePipeline</span
+                ><span class="tag">AWS CodeBuild</span
+                ><span class="tag">AWS CodeDeploy</span
+                ><span class="tag">CloudFormation</span>
+              </div>
               <a
                 href="https://github.com/Siluvai1997/aws-iac-delivery-pipeline-terraform"
-                >AWS IaC Delivery Pipeline (Terraform)</a
+                target="_blank"
+                >GitHub →</a
               >
-            </h4>
-            <p>
-              Terraform-based delivery pipeline integrated with GitHub Actions
-              for AWS provisioning.
-            </p>
-          </div>
-          <div class="project-card">
-            <h4>
+            </div>
+            <div class="project-card">
+              <h3>AWS Terraform Hello World</h3>
+              <p>
+                Intro Terraform project to provision AWS VPC, IAM, and EC2 with
+                backend state.
+              </p>
+              <div class="tags">
+                <span class="tag">Terraform</span><span class="tag">S3</span
+                ><span class="tag">AWS CLI</span
+                ><span class="tag">DynamoDB</span>
+              </div>
               <a
                 href="https://github.com/Siluvai1997/aws-terraform-hello-world-practice"
-                >AWS Terraform Hello World</a
+                target="_blank"
+                >GitHub →</a
               >
-            </h4>
-            <p>
-              Intro Terraform project to provision AWS VPC, IAM, and EC2 with
-              backend state.
-            </p>
+            </div>
+          </details>
+          <div class="view-all-link">
+            <a
+              href="https://github.com/Siluvai1997?tab=repositories"
+              target="_blank"
+              >View all repositories on GitHub →</a
+            >
           </div>
         </div>
 
         <button class="accordion" title="Click to view 2 GCP projects">
-          <span class="emoji">🛰️</span> GCP
-          <span class="chevron">▶</span>
+          GCP <span class="chevron">▶</span>
         </button>
         <div class="panel" style="display: none">
           <div class="project-card">
-            <h4>
-              <a href="https://github.com/Siluvai1997/gcp-devops-automation"
-                >GCP DevOps Automation</a
-              >
-            </h4>
+            <h3>GCP DevOps Automation</h3>
             <p>
-              Terraform automation for GCP infrastructure with GitOps and
-              Jenkins pipelines.
+              Infrastructure automation and service monitoring on GCP using
+              Terraform, Python, GitHub Actions, and Prometheus.
             </p>
+            <div class="tags">
+              <span class="tag">GCP</span><span class="tag">Terraform</span
+              ><span class="tag">Python</span><span class="tag">Docker</span
+              ><span class="tag">GitHub Actions</span
+              ><span class="tag">Prometheus</span>
+            </div>
+            <a
+              href="https://github.com/Siluvai1997/gcp-devops-automation"
+              target="_blank"
+              >GitHub →</a
+            >
           </div>
-          <div class="project-card">
-            <h4>
-              <a href="https://github.com/Siluvai1997/gke-monitoring-pipeline"
-                >GKE Monitoring Pipeline</a
+          <details>
+            <summary class="view-more">View more GCP projects</summary>
+            <div class="project-card">
+              <h3>GKE Monitoring Pipeline</h3>
+              <p>
+                Monitoring stack (Prometheus, Grafana, Loki) with dashboards
+                deployed into GKE.
+              </p>
+              <div class="tags">
+                <span class="tag">GCP</span><span class="tag">Terraform</span
+                ><span class="tag">Python</span><span class="tag">Docker</span
+                ><span class="tag">GitHub Actions</span
+                ><span class="tag">Prometheus</span
+                ><span class="tag">Grafana</span>
+              </div>
+              <a
+                href="https://github.com/Siluvai1997/gke-monitoring-pipeline"
+                target="_blank"
+                >GitHub →</a
               >
-            </h4>
-            <p>
-              Monitoring stack (Prometheus, Grafana, Loki) with dashboards
-              deployed into GKE.
-            </p>
+            </div>
+          </details>
+          <div class="view-all-link">
+            <a
+              href="https://github.com/Siluvai1997?tab=repositories"
+              target="_blank"
+              >View all repositories on GitHub →</a
+            >
           </div>
         </div>
-
         <button
           class="accordion"
           title="Click to view 6 RedHat OpenShift projects"
         >
-          <span class="emoji">🎩</span> OpenShift
-          <span class="chevron">▶</span>
+          OpenShift <span class="chevron">▶</span>
         </button>
         <div class="panel" style="display: none">
           <div class="project-card">
-            <h4>
-              <a
-                href="https://github.com/Siluvai1997/aro-upgrade-scheduler-automation"
-                >ARO Upgrade Scheduler Automation</a
-              >
-            </h4>
+            <h3>ARO Upgrade Scheduler Automation</h3>
             <p>
               Automates minor and patch version upgrades for ARO clusters using
               PowerShell + Azure DevOps.
             </p>
+            <div class="tags">
+              <span class="tag">PowerShell</span
+              ><span class="tag">Azure RedHat OpebShift</span
+              ><span class="tag">Azure DevOps</span>
+            </div>
+            <a
+              href="https://github.com/Siluvai1997/aro-upgrade-scheduler-automation"
+              target="_blank"
+              >GitHub →</a
+            >
           </div>
-          <div class="project-card">
-            <h4>
-              <a href="https://github.com/Siluvai1997/openshift-ansible-day2"
-                >OpenShift Ansible Day-2 Automation</a
+          <details>
+            <summary class="view-more">View more OpenShift projects</summary>
+            <div class="project-card">
+              <h3>OpenShift Ansible Day-2 Automation</h3>
+              <p>
+                Automates day-2 tasks in OpenShift such as node labeling and
+                quotas using Ansible playbooks.
+              </p>
+              <div class="tags">
+                <span class="tag">OpenShift</span
+                ><span class="tag">Ansible</span><span class="tag">GitHub</span>
+              </div>
+              <a
+                href="https://github.com/Siluvai1997/openshift-ansible-day2"
+                target="_blank"
+                >GitHub →</a
               >
-            </h4>
-            <p>
-              Automates day-2 tasks in OpenShift such as node labeling and
-              quotas using Ansible playbooks.
-            </p>
-          </div>
-          <div class="project-card">
-            <h4>
+            </div>
+            <div class="project-card">
+              <h3>OpenShift Ansible Multicloud</h3>
+              <p>
+                Manages OpenShift clusters across multicloud using centralized
+                Ansible configuration.
+              </p>
+              <div class="tags">
+                <span class="tag">OpenShift</span
+                ><span class="tag">Ansible</span><span class="tag">GitHub</span>
+              </div>
               <a
                 href="https://github.com/Siluvai1997/openshift-ansible-multicloud"
-                >OpenShift Ansible Multicloud</a
+                target="_blank"
+                >GitHub →</a
               >
-            </h4>
-            <p>
-              Manages OpenShift clusters across multicloud using centralized
-              Ansible configuration.
-            </p>
-          </div>
-          <div class="project-card">
-            <h4>
+            </div>
+            <div class="project-card">
+              <h3>OpenShift GitOps Bootstrap</h3>
+              <p>
+                Bootstraps GitOps deployment in OpenShift using ArgoCD and
+                AppSets.
+              </p>
+              <div class="tags">
+                <span class="tag">OpenShift</span><span class="tag">ArgoCD</span
+                ><span class="tag">GitHub</span><span class="tag">GitOps</span>
+              </div>
               <a
                 href="https://github.com/Siluvai1997/openshift-gitops-bootstrap"
-                >OpenShift GitOps Bootstrap</a
+                target="_blank"
+                >GitHub →</a
               >
-            </h4>
-            <p>
-              Bootstraps GitOps deployment in OpenShift using ArgoCD and
-              AppSets.
-            </p>
-          </div>
-          <div class="project-card">
-            <h4>
+            </div>
+            <div class="project-card">
+              <h3>ArgoCD OpenShift Infra Bootstrap</h3>
+              <p>
+                Deploys foundational OpenShift resources via ArgoCD & Helm
+                templates.
+              </p>
+              <div class="tags">
+                <span class="tag">OpenShift</span><span class="tag">ArgoCD</span
+                ><span class="tag">GitHub</span><span class="tag">Helm</span
+                ><span class="tag">GitOps</span>
+              </div>
               <a
                 href="https://github.com/Siluvai1997/argocd-openshift-infra-bootstrap"
-                >ArgoCD OpenShift Infra Bootstrap</a
+                target="_blank"
+                >GitHub →</a
               >
-            </h4>
-            <p>
-              Deploys foundational OpenShift resources via ArgoCD & Helm
-              templates.
-            </p>
-          </div>
-          <div class="project-card">
-            <h4>
+            </div>
+            <div class="project-card">
+              <h3>ArgoCD Helm HelloWorld Bootstrap</h3>
+              <p>
+                Deploys a Helm-based app into OpenShift using GitOps and
+                namespace-scoped workflows.
+              </p>
+              <div class="tags">
+                <span class="tag">OpenShift</span><span class="tag">ArgoCD</span
+                ><span class="tag">GitHub</span><span class="tag">Helm</span
+                ><span class="tag">GitOps</span>
+              </div>
               <a
                 href="https://github.com/Siluvai1997/argocd-helm-helloworld-bootstrap-openshift"
-                >ArgoCD Helm HelloWorld Bootstrap</a
+                target="_blank"
+                >GitHub →</a
               >
-            </h4>
-            <p>
-              Deploys a Helm-based app into OpenShift using GitOps and
-              namespace-scoped workflows.
-            </p>
+            </div>
+          </details>
+          <div class="view-all-link">
+            <a
+              href="https://github.com/Siluvai1997?tab=repositories"
+              target="_blank"
+              >View all repositories on GitHub →</a
+            >
           </div>
         </div>
 
         <button class="accordion" title="Click to view 2 Kubernetes projects">
-          <span class="emoji">🐳</span> Kubernetes
-          <span class="chevron">▶</span>
+          Kubernetes <span class="chevron">▶</span>
         </button>
         <div class="panel" style="display: none">
           <div class="project-card">
-            <h4>
-              <a href="https://github.com/Siluvai1997/k8s-security-audit-cli"
-                >K8s Security Audit CLI</a
-              >
-            </h4>
+            <h3>K8s Security Audit CLI</h3>
             <p>
-              CLI scanner for Kubernetes RBAC, pod specs, and network policies.
+              Ptyhon CLI scanner for Kubernetes RBAC, pod specs, and network
+              policies.
             </p>
+            <div class="tags">
+              <span class="tag">Kubernetes</span><span class="tag">Python</span>
+            </div>
+            <a
+              href="https://github.com/Siluvai1997/k8s-security-audit-cli"
+              target="_blank"
+              >GitHub →</a
+            >
           </div>
-          <div class="project-card">
-            <h4>
-              <a href="https://github.com/Siluvai1997/k8s-cicd-infrastructure"
-                >K8s CI/CD Infrastructure</a
+          <details>
+            <summary class="view-more">View more K8s projects</summary>
+            <div class="project-card">
+              <h3>K8s CI/CD Infrastructure</h3>
+              <p>
+                CI/CD automation using Jenkins for Docker-based workloads in
+                Kubernetes.
+              </p>
+              <div class="tags">
+                <span class="tag">Kubernetes</span
+                ><span class="tag">Jenkins</span><span class="tag">Nexus</span
+                ><span class="tag">Docker</span><span class="tag">Helm</span>
+              </div>
+              <a
+                href="https://github.com/Siluvai1997/k8s-cicd-infrastructure"
+                target="_blank"
+                >GitHub →</a
               >
-            </h4>
-            <p>
-              CI/CD automation using GitHub Actions for Docker-based workloads
-              in Kubernetes.
-            </p>
+            </div>
+          </details>
+          <div class="view-all-link">
+            <a
+              href="https://github.com/Siluvai1997?tab=repositories"
+              target="_blank"
+              >View all repositories on GitHub →</a
+            >
           </div>
         </div>
-
         <button class="accordion" title="Click to view ArgoCD projects">
-          <span class="emoji">🚀</span> ArgoCD
-          <span class="chevron">▶</span>
+          ArgoCD <span class="chevron">▶</span>
         </button>
         <div class="panel" style="display: none">
           <div class="project-card">
-            <h4>
-              <a
-                href="https://github.com/Siluvai1997/hybrid-k8s-gitops-platform"
-                >Hybrid Kubernetes GitOps Platform</a
-              >
-            </h4>
+            <h3>Hybrid Kubernetes GitOps Platform</h3>
             <p>
-              Manages hybrid clusters using ArgoCD with Helm, RBAC, and
-              multi-repo support.
+              Hybrid Kubernetes deployment with GitOps via ArgoCD, Helm-managed
+              microservices, and observability stack.
             </p>
+            <div class="tags">
+              <span class="tag">Kubernetes</span><span class="tag">AKS</span
+              ><span class="tag">Prometheus</span
+              ><span class="tag">Grafana</span
+              ><span class="tag">Fluent Bit</span
+              ><span class="tag">Argo CD</span><span class="tag">GitOps</span>
+            </div>
+            <a
+              href="https://github.com/Siluvai1997/hybrid-k8s-gitops-platform"
+              target="_blank"
+              >GitHub →</a
+            >
           </div>
         </div>
 
         <button class="accordion" title="Click to view CI/CD projects">
-          <span class="emoji">🔄</span> CI/CD
-          <span class="chevron">▶</span>
+          CI/CD <span class="chevron">▶</span>
         </button>
         <div class="panel" style="display: none">
           <div class="project-card">
-            <h4>
-              <a
-                href="https://github.com/Siluvai1997/python-cicd-pipeline-docker-kubernetes"
-                >Python CI/CD Pipeline (Docker + K8s)</a
-              >
-            </h4>
+            <h3>Python CI/CD Pipeline (Docker + K8s)</h3>
             <p>
-              GitHub Actions pipeline for testing, Dockerizing, and deploying a
-              Python app into Kubernetes.
+              End-to-end CI/CD pipeline to build, test, and deploy a Python
+              Flask application using Jenkins, SonarQube, Docker, and
+              Kubernetes.
             </p>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Jenkins</span
+              ><span class="tag">SonarQube</span
+              ><span class="tag">JFrog Artifactory</span
+              ><span class="tag">Docker</span
+              ><span class="tag">Kubernetes</span>
+            </div>
+            <a
+              href="https://github.com/Siluvai1997/python-cicd-pipeline-docker-kubernetes"
+              target="_blank"
+              >GitHub →</a
+            >
           </div>
         </div>
-
         <button class="accordion" title="Click to view Portfolio project">
-          <span class="emoji">📁</span> Portfolio
-          <span class="chevron">▶</span>
+          Portfolio <span class="chevron">▶</span>
         </button>
         <div class="panel" style="display: none">
           <div class="project-card">
-            <h4>DevOps Portfolio (This Site)</h4>
+            <h3>DevOps Portfolio (This Site)</h3>
             <p>
               Static site hosted via GitHub Pages and auto-deployed using GitHub
               Actions.
             </p>
+            <div class="tags">
+              <span class="tag">GitHub Pages</span
+              ><span class="tag">GitHub Actions</span
+              ><span class="tag">CSS</span><span class="tag">JavaScript</span
+              ><span class="tag">HTML</span>
+            </div>
+            <a
+              href="https://github.com/Siluvai1997/devops-portfolio"
+              target="_blank"
+              >GitHub →</a
+            >
           </div>
         </div>
       </section>
@@ -408,13 +569,13 @@
             <strong>🎓 Microsoft Certified:</strong> Azure Network Engineer
           </li>
           <li><strong>🎓 Microsoft Certified:</strong> Azure Fundamentals</li>
-          <li><strong>☁️ AWS Certified:</strong> Cloud Practitioner</li>
-          <li><strong>☁️ AWS Certified:</strong> Solution Architect</li>
+          <li><strong>🎓 AWS Certified:</strong> Cloud Practitioner</li>
+          <li><strong>🎓 AWS Certified:</strong> Solution Architect</li>
           <li>
-            <strong>🐳 CNCF:</strong> Certified Kubernetes Administrator (CKA)
+            <strong>🎓 CNCF:</strong> Certified Kubernetes Administrator (CKA)
           </li>
-          <li><strong>🔧 HashiCorp:</strong> Terraform Certified Associate</li>
-          <li><strong>🌐 CISCO:</strong> Certified Network Associate (CCNA)</li>
+          <li><strong>🎓 HashiCorp:</strong> Terraform Certified Associate</li>
+          <li><strong>🎓 CISCO:</strong> Certified Network Associate (CCNA)</li>
         </ul>
       </section>
       <section>
