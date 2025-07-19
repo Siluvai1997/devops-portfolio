@@ -127,6 +127,15 @@ a:hover {
   margin: 10px 0;
 }
 
+.tags span {
+  background-color: #e3f2fd;
+  color: #007acc;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75em;
+  margin-right: 6px;
+}
+
 .project-card .tags span {
   display: inline-block;
   background-color: #e3f2fd;
@@ -291,13 +300,4 @@ details summary.view-more {
   font-size: 0.95em;
   color: #007acc;
   text-decoration: underline;
-}
-
-.tags span {
-  background-color: #e3f2fd;
-  color: #007acc;
-  padding: 2px 8px;
-  border-radius: 12px;
-  font-size: 0.75em;
-  margin-right: 6px;
 }
