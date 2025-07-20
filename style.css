@@ -94,92 +94,6 @@ a:hover {
   font-style: italic;
 }
 
-.project-category {
-  margin-bottom: 25px;
-}
-
-.project-card {
-  background: #f8f9fa;
-  border-left: 4px solid #007acc;
-  padding: 16px 20px;
-  margin-bottom: 20px;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgb(0 0 0 / 5%);
-}
-
-.project-card:hover {
-  background: #f0f8ff;
-}
-
-.project-card h3 {
-  margin: 0 0 5px;
-  font-size: 1.1em;
-  color: #0a3d62;
-}
-
-.project-card p {
-  margin: 0 0 10px;
-  font-size: 0.95em;
-  color: #333;
-}
-
-.project-card .tags {
-  margin: 10px 0;
-}
-
-.tags span {
-  background-color: #e3f2fd;
-  color: #007acc;
-  padding: 2px 8px;
-  border-radius: 12px;
-  font-size: 0.75em;
-  margin-right: 6px;
-}
-
-.project-card .tags span {
-  display: inline-block;
-  background-color: #e3f2fd;
-  color: #007acc;
-  padding: 3px 10px;
-  border-radius: 12px;
-  font-size: 0.75em;
-  margin-right: 6px;
-}
-
-.project-card a {
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 0.9em;
-  color: #007acc;
-  text-decoration: underline;
-}
-
-.accordion {
-  background-color: #2e6c80;
-  color: white;
-  cursor: pointer;
-  padding: 14px 20px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  font-size: 1.1em;
-  margin-top: 15px;
-  border-radius: 5px;
-  transition:
-    background-color 0.3s ease,
-    transform 0.12s ease;
-}
-
-.accordion:hover {
-  background-color: var(--accent-dark);
-  transform: translateY(-2px);
-}
-
-.accordion.active {
-  background-color: var(--accent-dark);
-}
-
 .training-list {
   list-style: none;
   padding-left: 0;
@@ -188,16 +102,6 @@ a:hover {
 
 .training-list li::before {
   content: "📘 ";
-}
-
-.panel {
-  border-left: 4px solid var(--accent);
-  padding: 10px 20px 20px;
-  margin-bottom: 10px;
-  border-radius: 4px;
-  display: none;
-  background-color: #f9f9f9;
-  overflow: hidden;
 }
 
 .skills-grid {
@@ -279,12 +183,6 @@ a:hover {
   vertical-align: middle;
 }
 
-.project-category h3 {
-  margin-top: 30px;
-  font-size: 1.2em;
-  color: #2e6c80;
-}
-
 details summary.view-more {
   cursor: pointer;
   color: #007acc;
@@ -300,4 +198,130 @@ details summary.view-more {
   font-size: 0.95em;
   color: #007acc;
   text-decoration: underline;
+}
+
+/* ─── FILTER PILLS ──────────────────────────────── */
+.filter-controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 0 0 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.filter-controls li {
+  background: #fff;
+  border: 1px solid #d0d7de;
+  padding: 0.45em 1.3em;
+  border-radius: 9999px;
+  cursor: pointer;
+  font:
+    600 0.9rem/1 "Segoe UI",
+    sans-serif;
+  user-select: none;
+}
+
+.filter-controls .mixitup-control-active {
+  background: #007acc;
+  color: #fff;
+}
+
+/* ─── PROJECT GRID ──────────────────────────────── */
+.project-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+}
+
+/* every MixItUp target already has class="project-card mix …" */
+.project-card {
+  background: #fff;
+  border: 1px solid #d0d7de;
+  border-left: 4px solid #007acc; /* default accent  */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 5%);
+  border-left-color: var(--accent, #007acc);
+}
+
+.project-category {
+  margin-bottom: 25px;
+}
+
+.project-card:hover {
+  background: #f0f8ff;
+}
+
+.project-card h3 {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+  color: #0a3d62;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #007acc;
+  text-decoration: underline;
+}
+
+.project-card p {
+  margin: 0 0 10px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.project-card .tags {
+  margin: 10px 0;
+  margin-top: 8px;
+}
+
+.project-card .tags span {
+  display: inline-block;
+  background: #e8f3ff;
+  color: #007acc;
+  font-size: 0.72rem;
+  border-radius: 12px;
+  padding: 2px 8px;
+  margin: 2px 4px 0 0;
+}
+
+/* OPTIONAL: category-coloured card accents  */
+.project-card.azure {
+  --accent: #0072c6;
+}
+
+.project-card.aws {
+  --accent: #f90;
+}
+
+.project-card.gcp {
+  --accent: #4285f4;
+}
+
+.project-card.openshift {
+  --accent: #e00;
+}
+
+.project-card.k8s {
+  --accent: #326ce5;
+}
+
+.project-card.argocd {
+  --accent: #ef4f4f;
+}
+
+.project-card.cicd {
+  --accent: #794cff;
+}
+
+.project-card.portfolio {
+  --accent: #6e6e6e;
+}
+
+.view-all-card {
+  background-color: #f0f8ff; /* Alice Blue */
+  border-left: 4px solid #007acc;
 }
