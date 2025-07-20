@@ -39,7 +39,7 @@ jobs:
 
       - name: JavaScript lint
         run: |
-          echo '{ "env": { "browser": true, "es2021": true }, "extends": "eslint:recommended" }' > .eslintrc.json
+          echo '{ "env": { "browser": true, "es2021": true }, "extends": "eslint:recommended", "globals": { "mixitup": "readonly" } }' > .eslintrc.json
           eslint "**/*.js"
 
       - name: Prettier check
