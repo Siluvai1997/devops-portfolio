@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // eslint-disable-next-line no-unused-vars
   const mixer = mixitup(".project-grid", {
     selectors: { target: ".mix" },
     animation: { duration: 260 },
