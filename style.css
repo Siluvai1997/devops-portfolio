@@ -242,6 +242,7 @@ details summary.view-more {
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 6px rgb(0 0 0 / 5%);
+  border-left-color: var(--accent, #007acc);
 }
 
 .project-category {
@@ -291,29 +292,33 @@ details summary.view-more {
 .project-card.azure {
   --accent: #0072c6;
 }
+
 .project-card.aws {
-  --accent: #ff9900;
+  --accent: #f90;
 }
+
 .project-card.gcp {
   --accent: #4285f4;
 }
+
 .project-card.openshift {
-  --accent: #ee0000;
+  --accent: #e00;
 }
+
 .project-card.k8s {
   --accent: #326ce5;
 }
+
 .project-card.argocd {
   --accent: #ef4f4f;
 }
+
 .project-card.cicd {
   --accent: #794cff;
 }
+
 .project-card.portfolio {
   --accent: #6e6e6e;
-}
-.project-card {
-  border-left-color: var(--accent, #007acc);
 }
 
 .view-all-card {
